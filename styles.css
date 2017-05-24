@@ -20,19 +20,30 @@ body {
 
 .info{
   flex: 1 70%;
+  order:1;
 }
 
 .bio{
   flex: 1 30%;
+  order:2;
 }
 
 .wrapper{
   display: flex;
-  flex-flow: nowrap;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   .wrapper {flex-flow: wrap}
+  .bio { order: 1; }
+  .info { order: 2; }
+  .profile-img {margin: 0 auto}
+  .p-info {margin: 0 auto}
+  .row {padding: 15px 40px}
+}
+
+@media all and (min-width: 500px) {
+  .h-about {padding-top: 30px;}
+  .row {padding-bottom: 20px}
 }
 
 .img-responsive{
@@ -42,7 +53,7 @@ body {
   border-color: black;
 }
 
-p{
+p, ul {
   color:white;
   font-size: 18px;
 }
@@ -53,13 +64,12 @@ footer{
   display: flex;
 }
 
-.about{
+.h-about{
   font-size: 22px;
-  padding-top: 30px;
 }
 
 .profile-img .profile{
-  max-width: 150px;
+  max-width: 100px;
   border-radius: 50%;
   display: inline-block;
   border-style: solid;
@@ -72,11 +82,10 @@ footer{
 
 .row{
   text-align: center;
-  padding-bottom: 25px;
   font-size:25px;
 }
 
-.social-container{
+.p-info{
   width: 70%;
   color: white;
   font-size: 25px;
