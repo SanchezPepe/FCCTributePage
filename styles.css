@@ -10,29 +10,29 @@ body {
   font-weight: bold;
 }
 
-.contenedor{
+.layout-format{
   background-color: #B38A58;
-  padding: 15px;
+  padding: 20px;
   border-width: 5px;
   border-style: solid;
   border-color: white;
 }
 
-main{
-  width: 100%;
-  display: flex;
-}
-
 .info{
-  background-color: #B38A58;
-  display: inline-block;
-  width: 70%;
+  flex: 1 70%;
 }
 
-.biography{
-  background-color:#B38A58;
-  width: 30%;
-  display: inline-block;
+.bio{
+  flex: 1 30%;
+}
+
+.wrapper{
+  display: flex;
+  flex-flow: nowrap;
+}
+
+@media all and (max-width: 600px) {
+  .wrapper {flex-flow: wrap}
 }
 
 .img-responsive{
@@ -72,6 +72,8 @@ footer{
 
 .row{
   text-align: center;
+  padding-bottom: 25px;
+  font-size:25px;
 }
 
 .social-container{
