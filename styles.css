@@ -20,19 +20,17 @@ body {
 
 .info{
   flex: 1 70%;
-  order:1;
 }
 
 .bio{
   flex: 1 30%;
-  order:2;
 }
 
 .wrapper{
   display: flex;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 400px) {
   .wrapper {flex-flow: wrap}
   .bio { order: 1; }
   .info { order: 2; }
@@ -41,7 +39,7 @@ body {
   .row {padding: 15px 40px}
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 600px) {
   .h-about {padding-top: 30px;}
   .row {padding-bottom: 20px}
 }
